@@ -22,7 +22,7 @@ const Home = () => (
 const Note = ({ notes }) => {
   const id = useParams().id
   const note = notes.find(n => n.id === Number(id))
-  return (
+  return (  
     <div>
       <h2>{note.content}</h2>
       <div>{note.user}</div>
@@ -56,7 +56,7 @@ const Users = () => (
 )
 
 const Login = (props) => {
-  const navigate = useNavigate()
+  const navigate = useNavigate()  
 
   const onSubmit = (event) => {
     event.preventDefault()
